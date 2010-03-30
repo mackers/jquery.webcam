@@ -1,0 +1,21 @@
+Plugin which allows jQuery to read data from a user's webcam or other video capture device.
+
+Features:
+
+    * Until browsers support native webcam capture, a flash swf is used for the actual capture.
+    * The plugin can optionally prompt the user to allow flash access the webcam.
+    * The plugin writes the video to a canvas element.
+    * Support for adding callbacks and filters.
+
+Requirements
+
+    * jquerywebcamhelper.swf
+    * jQuery.flash plugin.
+    * jQuery UI Dialog element and a theme (for the optional user prompt).
+
+This plugin uses code from CamCanvas API 0.2. Copyright 2009 Taboca http://www.taboca.com/p/camcanvas/
+
+http://plugins.jquery.com/project/webcam
+http://github.com/mackers/jquery.webcam
+http://mackers.com/rant/2010/03/09/571-jquery-webcam
+
