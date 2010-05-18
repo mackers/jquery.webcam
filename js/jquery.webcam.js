@@ -1,5 +1,5 @@
 /*!
- * jQuery Webcam Plugin v1.0.2
+ * jQuery Webcam Plugin v1.0.3
  *
  * Plugin which allows jQuery to read data from a user's webcam or other video capture device.
  *
@@ -125,7 +125,7 @@
                 $.webcam._flash.find("embed").attr("allowScriptAccess", "always");
                 $.webcam._flash.find("embed").attr("mayscript", "true");
                 //$(document).find("body").append($.webcam._flash);
-                $dialog.dialog('close');
+                dialog.dialog('close');
                 setTimeout(function()
                 {
                     $('#jquerywebcamdialog').parent().get(0).style.display = "block";
@@ -136,7 +136,7 @@
 
             // the user did not specify a flash container to use - therefore we'll create our own container to prompt the user to accept video in flash.
             var blah = ""+$.webcam._dialogClose;
-            var $dialog = $('<div id="jquerywebcamdialog"></div>')
+            var dialog = $('<div id="jquerywebcamdialog"></div>')
                 .html('<div id="jquerywebcamflash"></div>'+$.webcam._dialogBody)
                 .dialog($.webcam._dialogProperties?$.webcam._dialogProperties:{
                     autoOpen: false,
@@ -147,7 +147,7 @@
                     buttons: {"I Can See Myself": onclose}
                 });
 
-            $dialog.dialog('open');
+            dialog.dialog('open');
 
             $.webcam._flash = $("#jquerywebcamflash");
         }
